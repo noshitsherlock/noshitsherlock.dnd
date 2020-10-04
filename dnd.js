@@ -30,7 +30,7 @@ async function printStatus() {
         await doNotDisturb.isEnabled().then(function (result) {
             result == true
                 ? console.log(`Do Not Distub is: ${chalk.green('enabled')}`)
-                : console.log(`Do Not Distub is: ${chalk.red('enabled')}`);
+                : console.log(`Do Not Distub is: ${chalk.red('disabled')}`);
         })
     })();
 }
